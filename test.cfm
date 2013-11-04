@@ -1,4 +1,8 @@
-﻿<cfset myBoardID="YOURBORDITHERE">
+﻿<cfset myBoardID="50856097d4f128181b007fb2">
+
+<cfdump var="#application#">
+<cfdump var="#session#">
+<cfabort>
 
 <cfset boards = createObject("component" , "com.timothycunningham.cftrello.boards")>
 <cfset lists = createObject("component" , "com.timothycunningham.cftrello.lists")>

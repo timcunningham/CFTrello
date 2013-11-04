@@ -8,7 +8,7 @@
 	<cfset application.sTokenEndpoint			= "https://trello.com/1/OAuthGetRequestToken"> 		
 	<cfset application.sAccessTokenEndpoint 	= "https://trello.com/1/OAuthGetAccessToken"> 	
 	<cfset application.sAuthorizationEndpoint 	= "https://trello.com/1/OAuthAuthorizeToken"> 
-	<cfset application.sCallbackURL 			= "#getHttpType()##cgi.server_name#/Trello/callback.cfm"> 
+	<cfset application.sCallbackURL 			= "#getHttpType()##cgi.server_name#/#listFirst(cgi.script_name, "/")#/callback.cfm"> 
 	<cfreturn>	
 </cffunction>
 
